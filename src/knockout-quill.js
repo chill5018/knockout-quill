@@ -12,11 +12,11 @@ ko.bindingHandlers.quill = {
   init(element, valueAccessor, allBindings) {
     const html_observable = valueAccessor();
     const focus_observable = ko.isObservable(allBindings.get('quill_has_focus')) && allBindings.get('quill_has_focus') || null;
-    const options = Object.assign({}, default_options);
 
     if (!ko.isObservable(html_observable))
       throw new Error("key to the 'quill' binding must be an observable");
 
+    const options = Object.assign({}, default_options, allBindings.get('quill_options'));
     // see if the user has enabled the toolbar module
     allBindings.has('quill_toolbar') && Object.assign(options.modules, {
       toolbar: {
