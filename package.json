@@ -1,6 +1,6 @@
 {
   "name": "knockout-quill-binding",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Quill WYSIWYG binding for Knockout.js",
   "main": "knockout-quill.js",
   "scripts": {
