@@ -16,7 +16,9 @@ ko.bindingHandlers.quill = {
     if (!ko.isObservable(html_observable))
       throw new Error("key to the 'quill' binding must be an observable");
 
+    // see if user has set quill_options
     const options = Object.assign({}, default_options, allBindings.get('quill_options'));
+
     // see if the user has enabled the toolbar module
     allBindings.has('quill_toolbar') && Object.assign(options.modules, {
       toolbar: {
@@ -109,15 +111,17 @@ ko.bindingHandlers.quill = {
     const html_observable = valueAccessor();
     const quill = quill_map.get(element);
 
-    // Get the user's current selection range(s)
-    const selection = quill.getSelection();
+    if (quill.getHTML() !== ko.unwrap(html_observable)) {
+      // Get the user's current selection range(s)
+      const selection = quill.getSelection();
 
-    // Set the content of the quill editor to the current value of the
-    // provided observable
-    quill.setHTML(ko.unwrap(html_observable) || "");
+      // Set the content of the quill editor to the current value of the
+      // provided observable
+      quill.setHTML(ko.unwrap(html_observable) || "");
 
-    // Reset the selection ranges to what the user initially had selected
-    quill.setSelection(selection);
+      // Reset the selection ranges to what the user initially had selected
+      quill.setSelection(selection);
+    }
   }
 
 };
