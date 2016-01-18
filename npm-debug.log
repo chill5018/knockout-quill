@@ -1,0 +1,69 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/cbankester/.nvm/versions/node/v5.4.0/bin/node',
+1 verbose cli   '/Users/cbankester/.nvm/versions/node/v5.4.0/bin/npm',
+1 verbose cli   'owner',
+1 verbose cli   'ls' ]
+2 info using npm@3.3.12
+3 info using node@v5.4.0
+4 silly mapToRegistry name knockout-quill
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry uri https://registry.npmjs.org/knockout-quill
+8 verbose request uri https://registry.npmjs.org/knockout-quill
+9 verbose request no auth needed
+10 info attempt registry request try #1 at 11:03:41 AM
+11 verbose request using bearer token for auth
+12 verbose request id 96be36883c5eacb6
+13 http request GET https://registry.npmjs.org/knockout-quill
+14 http 404 https://registry.npmjs.org/knockout-quill
+15 verbose headers { 'content-type': 'application/json',
+15 verbose headers   'cache-control': 'max-age=0',
+15 verbose headers   'content-length': '2',
+15 verbose headers   'accept-ranges': 'bytes',
+15 verbose headers   date: 'Mon, 18 Jan 2016 17:03:42 GMT',
+15 verbose headers   via: '1.1 varnish',
+15 verbose headers   connection: 'keep-alive',
+15 verbose headers   'x-served-by': 'cache-ord1729-ORD',
+15 verbose headers   'x-cache': 'MISS',
+15 verbose headers   'x-cache-hits': '0',
+15 verbose headers   'x-timer': 'S1453136621.859018,VS0,VE309' }
+16 silly get cb [ 404,
+16 silly get   { 'content-type': 'application/json',
+16 silly get     'cache-control': 'max-age=0',
+16 silly get     'content-length': '2',
+16 silly get     'accept-ranges': 'bytes',
+16 silly get     date: 'Mon, 18 Jan 2016 17:03:42 GMT',
+16 silly get     via: '1.1 varnish',
+16 silly get     connection: 'keep-alive',
+16 silly get     'x-served-by': 'cache-ord1729-ORD',
+16 silly get     'x-cache': 'MISS',
+16 silly get     'x-cache-hits': '0',
+16 silly get     'x-timer': 'S1453136621.859018,VS0,VE309' } ]
+17 error owner ls Couldn't get owner data knockout-quill
+18 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/knockout-quill
+18 verbose stack     at makeError (/Users/cbankester/.nvm/versions/node/v5.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+18 verbose stack     at CachingRegistryClient.<anonymous> (/Users/cbankester/.nvm/versions/node/v5.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+18 verbose stack     at Request._callback (/Users/cbankester/.nvm/versions/node/v5.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+18 verbose stack     at Request.self.callback (/Users/cbankester/.nvm/versions/node/v5.4.0/lib/node_modules/npm/node_modules/request/request.js:198:22)
+18 verbose stack     at emitTwo (events.js:87:13)
+18 verbose stack     at Request.emit (events.js:172:7)
+18 verbose stack     at Request.<anonymous> (/Users/cbankester/.nvm/versions/node/v5.4.0/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+18 verbose stack     at emitOne (events.js:82:20)
+18 verbose stack     at Request.emit (events.js:169:7)
+18 verbose stack     at IncomingMessage.<anonymous> (/Users/cbankester/.nvm/versions/node/v5.4.0/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+19 verbose statusCode 404
+20 verbose pkgid knockout-quill
+21 verbose cwd /Users/cbankester/Work/code/js/node/immense-networks/knockout-quill
+22 error Darwin 15.2.0
+23 error argv "/Users/cbankester/.nvm/versions/node/v5.4.0/bin/node" "/Users/cbankester/.nvm/versions/node/v5.4.0/bin/npm" "owner" "ls"
+24 error node v5.4.0
+25 error npm  v3.3.12
+26 error code E404
+27 error 404 Registry returned 404 for GET on https://registry.npmjs.org/knockout-quill
+27 error 404
+27 error 404 'knockout-quill' is not in the npm registry.
+27 error 404 You should bug the author to publish it (or use the name yourself!)
+27 error 404
+27 error 404 Note that you can also install from a
+27 error 404 tarball, folder, http url, or git url.
+28 verbose exit [ 1, true ]
