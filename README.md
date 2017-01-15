@@ -1,6 +1,13 @@
-# Knockout Quill Binding
+# Knockout Quill Binding Forked
 
 This binding adds a [quill](http://quilljs.com/) WYSIWYG and binds it to a [Knockout.js](http://knockoutjs.com/) observable.
+
+## What's New
+This fork has been updated to work with Quill v 1.1.9 
+
+* Removed Deprecated Quill Methods such as `.setHtml()` and `.getHtml()` 
+* Removed Observable tracking when text fields become in focus and out of focus. 
+
 
 ## Demo
 
